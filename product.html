@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body id="product">
+    <!-- I gave the body tag an ID, because i will use it as 
+                       a reference in the javascript file -->
+
+    <nav>
+      <div class="brand">Organic World</div>
+      <div class="links">
+        <a data-active="home" href="index.html">Home</a>
+        <!---
+              i gave the home link a data-active attribute value as home.
+              it is the same value as the pages body tag's id.
+              in the javascript file i will do a check, and if the body's tag id
+              is equal to a links data-active value, then i will assign to that link
+              a css class to highlight that link.
+              hope it make's sense.
+          -->
+        <a data-active="product" href="product.html">Products</a>
+        <a data-active="farm" href="farm.html">Farm Tour</a>
+        <a data-active="about" href="about.html">About us</a>
+        <a data-active="contact" href="contact.html">Contact us</a>
+      </div>
+    </nav>
+    <!---I will also add a header to the pages-->
+    <header>
+      <h1>This is the product page</h1>
+      <h2>Some words about the product page</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut,
+        necessitatibus delectus sint adipisci dolorem nemo possimus reiciendis
+        eius quo quas? Rerum, vitae. Eligendi quia ex sapiente. Dicta, soluta
+        obcaecati.
+      </p>
+    </header>
+
+    <script src="/javascript.js"></script>
+  </body>
+</html>
